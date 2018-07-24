@@ -12,8 +12,7 @@ bot.on('ready', function() {
 
 /*MENSAJE DE BIENVENIDA*/
 bot.on('guildMemberAdd', member => {
-    let guild = member.guild;
-    guild.defaultChannel.sendMessage(`Bienvenido ${member.user}!!!`).catch(console.error);
+    member.guild.channels.get('470933764823056387').send("Bienvenido " + member.user.username + "!!!"); 
 });
 
 
