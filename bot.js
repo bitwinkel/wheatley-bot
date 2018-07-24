@@ -34,4 +34,10 @@ bot.on('message', function(user, userID, channelID, message, event) {
 			message: "Mmmm yo no..."
 		});
 	}
+	else if (message.toUpperCase().indexOf("MANU") !=-1) {
+		bot.sendMessage({
+			to: channelID,
+			message: "Puto amo"
+		});
+	}
 });
