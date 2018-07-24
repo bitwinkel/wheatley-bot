@@ -8,7 +8,18 @@ var bot = new Discord.Client({
 bot.on('ready', function() {
     console.log('Logged in as %s - %s\n', bot.username, bot.id);
 });
- 
+
+
+/*MENSAJE DE BIENVENIDA*/
+bot.on("guildMemberAdd", (guild, member) => {
+	bot.sendMessage({
+            to: 470933764823056387,
+            message: "Bienvenido "+ member.user.username +"!!!"
+        });
+});
+
+
+/*CONTESTACIONES*/
 bot.on('message', function(user, userID, channelID, message, event) {
     if (message.toUpperCase().indexOf("WHEATLEY TALKS") !=-1) {
         bot.sendMessage({
