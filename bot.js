@@ -12,22 +12,9 @@ bot.on('ready', function() {
 
 /*MENSAJE DE BIENVENIDA*/
 bot.on('guildMemberAdd', member => {
-    bot.sendMessage({
-	    to: '470933764823056387',
-	    message: "Bienvenido!"
-    });
-    bot.sendMessage({
-	    to: 470933764823056387,
-	    message: "Bienvenido!!"
-    });
-    bot.sendMessage({
-	    to: '470933764823056387',
-	    message: "Bienvenido " + member.user.username + "!"
-    });
-    member.guild.channels.get('470933764823056387').send("Bienvenido!!!"); 
-    member.guild.channels.get(470933764823056387).send("Bienvenido!!!!"); 
-    member.guild.channels.get('470933764823056387').send("Bienvenido " + member.user.username + "!!!"); 
-    member.guild.channels.get(470933764823056387).send("Bienvenido " + member.user.username + "!!!"); 
+      console.log(`New User "${member.user.username}" has joined "${member.guild.name}"` );
+  member.guild.channels.get("general").send(`"${member.user.username}" bienvenido a Gamelx!`);
+
 });
 
 
