@@ -37,7 +37,7 @@ bot.on('message', function(user, userID, channelID, message, event) {
 	else if (message.toUpperCase().indexOf("GLADOS") !=-1) {
 		bot.sendMessage({
 			to: channelID,
-			message: "GladOS? Ah si, la patata :glados:"
+			message: "Pulsa el botón!"
 		});
 	}
 });
