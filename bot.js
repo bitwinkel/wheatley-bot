@@ -34,10 +34,10 @@ bot.on('message', function(user, userID, channelID, message, event) {
 			message: "Mmmm yo no..."
 		});
 	}
-	else if (message.toUpperCase().indexOf("MANU") !=-1) {
+	else if (message.toUpperCase().indexOf("GLADOS") !=-1) {
 		bot.sendMessage({
 			to: channelID,
-			message: "Puto amo"
+			message: "GladOS? Ah si, la patata :glados:"
 		});
 	}
 });
