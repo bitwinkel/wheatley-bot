@@ -11,11 +11,8 @@ bot.on('ready', function() {
 
 
 /*MENSAJE DE BIENVENIDA*/
-bot.on("guildMemberAdd", (guild, member) => {
-	bot.sendMessage({
-            to: 470933764823056387,
-            message: "Bienvenido "+ member.user.username +"!!!"
-        });
+bot.on('guildMemberAdd', member => {
+    member.guild.channels.get('channelID').send("Bienvenido "+ member.user.username +"!!!"); 
 });
 
 
