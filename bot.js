@@ -40,4 +40,10 @@ bot.on('message', function(user, userID, channelID, message, event) {
 			message: "Pulsa el botón!"
 		});
 	}
+	else if (message.toUpperCase().indexOf("INVITACI") !=-1) {
+		bot.sendMessage({
+			to: channelID,
+			message: "Este es el enlace de invitación al canal https://discord.gg/Ffvpz7"
+		});
+	}
 });
