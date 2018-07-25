@@ -17,6 +17,8 @@ bot.on('guildMemberAdd', member => {
     member.guild.channels.get("#general").send(member.user.username +" bienvenido a Gamelx!!");
     member.guild.channels.get("470933764823056387").send(member.user.username +" bienvenido a Gamelx!!!");
     member.guild.channels.get(470933764823056387).send(member.user.username +" bienvenido a Gamelx!!!!");
+    member.guild.defaultChannel.send("Bienvenido " + member.user.username + "!");
+    member.guild.defaultChannel.send("Bienvenido!!");
 });
 
 
