@@ -13,14 +13,9 @@ bot.on('ready', function() {
 /*MENSAJE DE BIENVENIDA*/
 bot.on('guildMemberAdd', function(member) {
     bot.sendMessage({
-        to: member.user.id,
-        message: "Bienvenido a Gamelx!"
-    });
-    bot.sendMessage({
         to: "470933764823056387",
-        message: "Bienvenido!"
+        message: "Bienvenido!"/*member.user.username*/
     });
-    /*member.user.username*/
 });
 
 
