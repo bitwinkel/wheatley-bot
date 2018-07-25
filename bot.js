@@ -12,9 +12,11 @@ bot.on('ready', function() {
 
 /*MENSAJE DE BIENVENIDA*/
 bot.on('guildMemberAdd', function(member) {
+    var usuario = Bot.servers[member.guild_id].members[member.id].nick;
+    usuario = usuario ? usuario : "";
     bot.sendMessage({
         to: "470933764823056387",
-        message: "Bienvenido " + member.user.username + "!"
+        message: "Bienvenido " + usuario + "!"
     });
 });
 
