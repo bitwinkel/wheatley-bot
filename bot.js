@@ -15,7 +15,7 @@ bot.on('guildMemberAdd', member => {
     console.log("New User");
     console.log("New User " +member.user.username + "has joined " + member.guild.name );
     member.guild.defaultChannel.send("Bienvenido " + member.user.username + "!");
-    member.guild.defaultChannel.send("Bienvenido!!");
+    member.guild.defaultChannel.send("Te gustan las patatas?");
 });
 
 
