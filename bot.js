@@ -34,7 +34,7 @@ bot.on('message', function(user, userID, channelID, message, event) {
 			message: "Si, dime"
 		});
 	}
-	else if(message.toUpperCase().match( /PUTA|PUTO|JODER|CABRÓN|CABRON|JILI|GILI|MIERDA|CIPOTE|POLLA|POYA|CAPULLO|CAPUYO|CHÚPAME|CHUPAME|QUE TE DEN/g )){
+	else if(message.toUpperCase().match( /PUTA|PUTO|JODER|CABRÓN|CABRON|JILI|GILI|MIERDA|CIPOTE|POLLA|POYA|CAPULLO|CAPUYO|CHÚPAME|CHUPAME|QUE TE DEN|Q TE DEN/g )){
 		bot.sendMessage({
 			to: channelID,
 			message: "Espera, ¿una palabrota? mis oidos, mis oidoooos!¡!¡!¡. No, espera, ¿mis sensores?"
@@ -46,6 +46,12 @@ bot.on('message', function(user, userID, channelID, message, event) {
 			message: "Mmmm yo no..."
 		});
 	}
+	else if (message.toUpperCase().indexOf("XD") !=-1) {
+		bot.sendMessage({
+			to: channelID,
+			message: "XD no, espera, no lo pillo"
+		});
+	}
 	else if (message.toUpperCase().indexOf("GLADOS") !=-1) {
 		bot.sendMessage({
 			to: channelID,
@@ -55,7 +61,7 @@ bot.on('message', function(user, userID, channelID, message, event) {
 	else if (message.toUpperCase().indexOf("INVITACI") !=-1) {
 		bot.sendMessage({
 			to: channelID,
-			message: "Este es el enlace para unirse al canal https://discord.gg/Ffvpz7"
+			message: "Este es el enlace para unirse al canal https://discord.gg/vmrquh7"
 		});
 	}
 });
