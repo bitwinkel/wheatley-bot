@@ -25,6 +25,7 @@ bot.on('guildMemberAdd', member => {
 /*CONTESTACIONES*/
 bot.on('message', function(user, userID, channelID, message, event) {
     if (message.toUpperCase().indexOf("WHEATLEY TALKS") !=-1) {
+	console.log("Talk talk");
         bot.sendMessage({
             to: channelID,
             message: message.replace("WHEATLEY TALKS ","").replace("Wheatley Talks ","").replace("Wheatley talks ","").replace("wheatley talks ","")
