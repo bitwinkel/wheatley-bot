@@ -46,10 +46,10 @@ bot.on('message', function(user, userID, channelID, message, event) {
 			message: "Mmmm yo no..."
 		});
 	}
-	else if (message.toUpperCase().indexOf("XD") !=-1 || message.toUpperCase().indexOf("JAJA") !=-1 || message.toUpperCase().indexOf(":JOY:") !=-1) {
+	else if (message.toUpperCase().indexOf("XD") !=-1 || message.toUpperCase().indexOf("JAJA") !=-1 || message.toUpperCase().indexOf("JOY") !=-1) {
 		bot.sendMessage({
 			to: channelID,
-			message: "XD no, espera, no lo pillo"
+			message: "jejeje, no, espera, no lo pillo"
 		});
 	}
 	else if (message.toUpperCase().indexOf("GLADOS") !=-1) {
