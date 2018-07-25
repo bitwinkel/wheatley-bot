@@ -22,12 +22,24 @@ bot.on('guildMemberAdd', function(member) {
 
 /*CONTESTACIONES*/
 bot.on('message', function(user, userID, channelID, message, event) {
-    if (message.toUpperCase().indexOf("WHEATLEY TALKS") !=-1) {
-        bot.sendMessage({
-            to: channelID,
-            message: message.replace("WHEATLEY TALKS ","").replace("Wheatley Talks ","").replace("Wheatley talks ","").replace("wheatley talks ","")
-        });
-    }
+        
+	/*Wheatley talks*/
+	if (message.toUpperCase().indexOf("WHEATLEY TALKS") !=-1) {
+            bot.sendMessage({
+                to: channelID,
+                message: message.replace("WHEATLEY TALKS ","").replace("Wheatley Talks ","").replace("Wheatley talks ","").replace("wheatley talks ","")
+            });
+        }
+	
+	/*Invitación al canal*/
+	else if (message.toUpperCase().indexOf("INVITACI") !=-1) {
+		bot.sendMessage({
+			to: channelID,
+			message: "Este es el enlace para unirse al canal https://discord.gg/vmrquh7"
+		});
+	}
+	
+	/*Tonterias varias*/
 	else if (message.toUpperCase().indexOf("WHEATLEY") !=-1) {
 		bot.sendMessage({
 			to: channelID,
@@ -58,10 +70,17 @@ bot.on('message', function(user, userID, channelID, message, event) {
 			message: "Pulsa el botón!"
 		});
 	}
-	else if (message.toUpperCase().indexOf("INVITACI") !=-1) {
+	
+	else if (message.toUpperCase().indexOf("MANU") !=-1) {
 		bot.sendMessage({
 			to: channelID,
-			message: "Este es el enlace para unirse al canal https://discord.gg/vmrquh7"
+			message: "Si si! ese!... Manu"
+		});
+	}
+	else if (message.toUpperCase().indexOf("PUBG") !=-1) {
+		bot.sendMessage({
+			to: channelID,
+			message: "El PUBG es un juegazo"
 		});
 	}
 });
