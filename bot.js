@@ -74,13 +74,13 @@ bot.on('message', function(user, userID, channelID, message, event) {
 	else if (message.toUpperCase().indexOf("MANU") !=-1) {
 		bot.sendMessage({
 			to: channelID,
-			message: "Si si! ese!... Manu"
+			message: "Si si! ese!...Man U"
 		});
 	}
 	else if (message.toUpperCase().indexOf("PUBG") !=-1) {
 		bot.sendMessage({
 			to: channelID,
-			message: "El PUBG es un juegazo"
+			message: "juegazo!"
 		});
 	}
 });
