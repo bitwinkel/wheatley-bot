@@ -46,7 +46,7 @@ bot.on('message', function(user, userID, channelID, message, event) {
 			message: "Mmmm yo no..."
 		});
 	}
-	else if (message.toUpperCase().indexOf("XD") !=-1 || message.toUpperCase().indexOf("JAJA") !=-1 || message.toUpperCase().indexOf("JOY") !=-1) {
+	else if (message.toUpperCase().indexOf("XD") !=-1 || message.toUpperCase().indexOf("JAJA") !=-1 || message.indexOf(":joy:") !=-1) {
 		bot.sendMessage({
 			to: channelID,
 			message: "jejeje, no, espera, no lo pillo"
