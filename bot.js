@@ -14,7 +14,7 @@ bot.on('ready', function() {
 bot.on('guildMemberAdd', function(member) {
     bot.sendMessage({
         to: "470933764823056387",
-        message: "Bienvenido!"/*member.user.username*/
+        message: "Bienvenido " + member.user.username + "!"
     });
 });
 
