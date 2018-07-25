@@ -11,18 +11,29 @@ bot.on('ready', function() {
 
 
 /*MENSAJE DE BIENVENIDA*/
-bot.on('guildMemberAdd', member => {
-    console.log("New User");
-    console.log("New User " +member.user.username + "has joined " + member.guild.name );
-    member.guild.defaultChannel.send("Bienvenido " + member.user.username + "!");
-    member.guild.defaultChannel.send("Te gustan las patatas?");
+bot.on('guildMemberAdd', function(member) {
+    bot.sendMessage({
+        to: "470933764823056387",
+        message: "Bienvenido!"
+    });
+    bot.sendMessage({
+        to: 470933764823056387,
+        message: "Bienvenido!!"
+    });
+    bot.sendMessage({
+        to: "470933764823056387",
+        message: "Bienvenido " + member.user.username + "!"
+    });
+    bot.sendMessage({
+        to: 470933764823056387,
+        message: "Bienvenido " + member.user.username + "!!"
+    });
 });
 
 
 /*CONTESTACIONES*/
 bot.on('message', function(user, userID, channelID, message, event) {
     if (message.toUpperCase().indexOf("WHEATLEY TALKS") !=-1) {
-	console.log("Talk talk");
         bot.sendMessage({
             to: channelID,
             message: message.replace("WHEATLEY TALKS ","").replace("Wheatley Talks ","").replace("Wheatley talks ","").replace("wheatley talks ","")
