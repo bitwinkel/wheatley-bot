@@ -83,4 +83,10 @@ bot.on('message', function(user, userID, channelID, message, event) {
 			message: "juegazo!"
 		});
 	}
+	 if (message.toUpperCase().indexOf("MARIC") !=-1) {
+		bot.sendMessage({
+			to: channelID,
+			message: "https://youtu.be/X2j0Sr_6wU4"
+		});
+	}
 });
